@@ -2,7 +2,7 @@
   "name": "task-management-front",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 11101",
     "build": "next build",
     "build:export": "next build && next export",
     "start": "next start",
@@ -27,11 +27,15 @@
     "prettier": "^2.8.3"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.6",
     "@types/node": "18.11.19",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.2",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
