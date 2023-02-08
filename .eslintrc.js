@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'airbnb',
     'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
     'plugin:jest/style',
@@ -34,7 +35,16 @@ module.exports = {
       }
     ],
     'unused-imports/no-unused-imports': 'error',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'jest/consistent-test-it': ['error', { fn: 'it' }],
-    'jest/require-top-level-describe': ['error']
+    'jest/require-top-level-describe': ['error'],
+    'react/jsx-sort-props': [
+      'error',
+      { callbacksLast: true, shorthandFirst: true, multiline: 'last', reservedFirst: true }
+    ],
+    // off
+    'react/function-component-definition': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off'
   }
 }
