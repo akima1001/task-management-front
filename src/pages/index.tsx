@@ -1,6 +1,5 @@
 import { Flex } from '@chakra-ui/react'
 import { Inter } from '@next/font/google'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,8 +25,7 @@ export default function Home() {
             target="_blank"
           >
             By
-            <Image
-              priority
+            <img
               alt="Vercel Logo"
               className={styles.vercelLogo}
               height={24}
@@ -39,16 +37,9 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
-          priority
-          alt="Next.js Logo"
-          className={styles.logo}
-          height={37}
-          src="/next.svg"
-          width={180}
-        />
+        <img alt="Next.js Logo" className={styles.logo} height={37} src="/next.svg" width={180} />
         <div className={styles.thirteen}>
-          <Image priority alt="13" height={31} src="/thirteen.svg" width={40} />
+          <img alt="13" height={31} src="/thirteen.svg" width={40} />
         </div>
       </div>
 

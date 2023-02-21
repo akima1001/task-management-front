@@ -45,6 +45,8 @@ module.exports = {
     // off
     'react/function-component-definition': 'off',
     'react/require-default-props': 'off',
-    'react/jsx-props-no-spreading': 'off'
+    'react/jsx-props-no-spreading': 'off',
+    // 静的サイトとしてのexportをさせるため
+    '@next/next/no-img-element': 'off'
   }
 }
