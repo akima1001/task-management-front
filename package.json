@@ -2,10 +2,10 @@
   "name": "task-management-front",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next dev -p 11101",
+    "start": "next dev -p 12080",
     "build": "next build",
     "build:export": "next build && next export",
-    "start": "next start",
+    "start:prod": "next start",
     "prettier": "prettier --write --cache --config .prettierrc.js src",
     "lint:fix": "next lint --cache --fix src --ext ts,tsx && npm run prettier",
     "jest": "jest",
